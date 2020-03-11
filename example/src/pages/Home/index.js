@@ -1,25 +1,25 @@
 import React from 'react';
 import Document from 'components/Document';
-import { PhotoSwipe } from 'react-photoswipe';
+import { PhotoSwipe } from 'react-photoswipe-to-body';
 
 class HomePage extends React.Component {
   state = {
     isOpen: false,
     items: [
       {
-        src: 'http://lorempixel.com/1200/900/sports/1',
+        src: 'https://www.czlogo.com/uploads/image/2019/07/10/1562741297835.jpg',
         w: 1200,
         h: 900,
         title: 'Image 1'
       },
       {
-        src: 'http://lorempixel.com/1200/900/sports/2',
+        src: 'https://www.czlogo.com/uploads/image/2019/07/10/1562741297835.jpg',
         w: 1200,
         h: 900,
         title: 'Image 2'
       },
       {
-        src: 'http://lorempixel.com/1200/900/sports/3',
+        src: 'https://www.czlogo.com/uploads/image/2019/07/10/1562741297835.jpg',
         w: 1200,
         h: 900,
         title: 'Image 3'

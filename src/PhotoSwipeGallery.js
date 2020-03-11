@@ -1,4 +1,5 @@
 import React from 'react';
+import { createPortal } from 'react-dom';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import pick from 'lodash.pick';
@@ -92,13 +93,18 @@ class PhotoSwipeGallery extends React.Component {
             </div>
           ))}
         </div>
-        <PhotoSwipe
-          {...eventProps}
-          isOpen={isOpen}
-          items={items}
-          options={options}
-          onClose={this.handleClose}
-        />
+        {
+          createPortal(
+            <PhotoSwipe
+              {...eventProps}
+              isOpen={isOpen}
+              items={items}
+              options={options}
+              onClose={this.handleClose}
+            />,
+            document.body
+          )
+        }
       </div>
     );
   }

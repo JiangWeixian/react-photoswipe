@@ -53,7 +53,8 @@ class PhotoSwipe extends React.Component {
 
   openPhotoSwipe = (props) => {
     const { items, options } = props;
-    this.photoSwipe = new Photoswipe(document.body, PhotoswipeUIDefault, items, options);
+    const pswpElement = this.pswpElement;
+    this.photoSwipe = new Photoswipe(pswpElement, PhotoswipeUIDefault, items, options);
     events.forEach((event) => {
       const callback = props[event];
       if (callback || event === 'destroy') {

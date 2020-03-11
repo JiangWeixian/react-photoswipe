@@ -1,34 +1,34 @@
 import React from 'react';
 import Document from 'components/Document';
-import { PhotoSwipeGallery } from 'react-photoswipe';
+import { PhotoSwipeGallery } from 'react-photoswipe-to-body';
 
 class GalleryPage extends React.Component {
   state = {
     isOpen: false,
     items: [
       {
-        src: 'http://lorempixel.com/1200/900/nightlife/1',
+        src: 'https://www.czlogo.com/uploads/image/2019/07/10/1562741297835.jpg',
         thumbnail: 'http://lorempixel.com/120/90/nightlife/1',
         w: 1200,
         h: 900,
         title: 'Image 1'
       },
       {
-        src: 'http://lorempixel.com/1200/900/nightlife/2',
+        src: 'https://www.czlogo.com/uploads/image/2019/07/10/1562741297835.jpg',
         thumbnail: 'http://lorempixel.com/120/90/nightlife/2',
         w: 1200,
         h: 900,
         title: 'Image 2'
       },
       {
-        src: 'http://lorempixel.com/1200/900/nightlife/3',
+        src: 'https://www.czlogo.com/uploads/image/2019/07/10/1562741297835.jpg',
         thumbnail: 'http://lorempixel.com/120/90/nightlife/3',
         w: 1200,
         h: 900,
         title: 'Image 3'
       },
       {
-        src: 'http://lorempixel.com/1200/900/nightlife/4',
+        src: 'https://www.czlogo.com/uploads/image/2019/07/10/1562741297835.jpg',
         thumbnail: 'http://lorempixel.com/120/90/nightlife/4',
         w: 1200,
         h: 900,
