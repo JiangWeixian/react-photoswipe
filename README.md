@@ -1,4 +1,7 @@
 # React PhotoSwipe
+> just make photo as direct child of body by using reactdom.portal
+
+> 没有任何破坏性改动，仅仅是将`PhotoSwipe`挂载到`body`元素下。
 
 PhotoSwipe, PhotoSwipeGallery component for ReactJS base on [PhotoSwipe](http://photoswipe.com/).
 
@@ -7,12 +10,12 @@ PhotoSwipe, PhotoSwipeGallery component for ReactJS base on [PhotoSwipe](http://
 ### NPM
 
 ```bash
-npm install --save react-photoswipe
+npm install --save react-photoswipe-to-body
 ```
 
 ### Bower
 ```bash
-bower install --save react-photoswipe
+bower install --save react-photoswipe-to-body
 ```
 
 ## Usage
@@ -22,13 +25,13 @@ bower install --save react-photoswipe
 #### With webpack:
 
 ```js
-import 'react-photoswipe/lib/photoswipe.css';
+import 'react-photoswipe-to-body/lib/photoswipe.css';
 ```
 
 #### Without webpack:
 
 ```html
-<link rel="stylesheet" type="text/css" href="path/to/react-photoswipe/lib/photoswipe.css">
+<link rel="stylesheet" type="text/css" href="path/to/react-photoswipe-to-body/lib/photoswipe.css">
 ```
 
 ### JS
@@ -36,7 +39,7 @@ import 'react-photoswipe/lib/photoswipe.css';
 #### PhotoSwipe
 
 ```js
-import {PhotoSwipe} from 'react-photoswipe';
+import {PhotoSwipe} from 'react-photoswipe-to-body';
 
 let isOpen = true;
 
@@ -70,7 +73,7 @@ handleClose = () => {
 #### PhotoSwipeGallery
 
 ```js
-import {PhotoSwipeGallery} from 'react-photoswipe';
+import {PhotoSwipeGallery} from 'react-photoswipe-to-body';
 
 let items = [
   {
@@ -105,8 +108,8 @@ getThumbnailContent = (item) => {
 ### UMD
 
 ```html
-<link rel="stylesheet" type="text/css" href="path/to/react-photoswipe/dist/photoswipe.css">
-<script src="path/to/react-photoswipe/dist/react-photoswipe.js"></script>
+<link rel="stylesheet" type="text/css" href="path/to/react-photoswipe-to-body/dist/photoswipe.css">
+<script src="path/to/react-photoswipe-to-body/dist/react-photoswipe-to-body.js"></script>
 ```
 
 ```js
@@ -185,4 +188,4 @@ imageLoadComplete(instance, index, item);
 
 ## Demo
 
-View [demo](http://minhtranite.github.io/react-photoswipe) or example folder.
+View [demo](http://minhtranite.github.io/react-photoswipe-to-body) or example folder.
